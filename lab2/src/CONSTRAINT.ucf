@@ -1,0 +1,29 @@
+#**************************************************************************************************************************************************#
+#                                            UCF for ElbertV2 Development Board                                                                    #
+#**************************************************************************************************************************************************#
+CONFIG VCCAUX = "3.3" ;
+ 
+ # Clock 12 MHz
+  NET "CLOCK"                  LOC = P129  | IOSTANDARD = LVCMOS33 | PERIOD = 12MHz;
+
+####################################################################################################
+#                                       LED
+####################################################################################################
+
+    NET "OUTPUT(0)"             LOC = P46   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    NET "OUTPUT(1)"             LOC = P47   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    NET "OUTPUT(2)"             LOC = P48   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    NET "OUTPUT(3)"             LOC = P49   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    NET "OUTPUT(4)"             LOC = P50   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    NET "OUTPUT(5)"             LOC = P51   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    NET "OUTPUT(6)"             LOC = P54   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    NET "OUTPUT(7)"             LOC = P55   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+
+####################################################################################################
+#                                   DP Switches
+####################################################################################################
+    NET "RESET"          LOC = P70   | PULLUP  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    NET "MODE"        LOC = P69   | PULLUP  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    NET "SPEED"          LOC = P68   | PULLUP  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+
+   
